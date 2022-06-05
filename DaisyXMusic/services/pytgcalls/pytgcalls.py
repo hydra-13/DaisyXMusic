@@ -1,9 +1,10 @@
-import config
+
 from pyrogram import Client
 from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped
 
+from DaisyXMusic.config import API_HASH, API_ID, SESSION_NAME
 from DaisyXMusic.services.queues import queues
 
 client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
